@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de responsividade</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+
+        main{
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            min-width: 280px;/*o min e o max width estão deixando o texto responsivo */
+            max-width: 800px;
+            margin: auto;
+        }
+        img{
+            width: 100%;/*o width dentro da tag img esta deixando a imagem responsiva -1° forma de deixar a img responsiva*/
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando responsividade</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, dolorem nam. Enim labore fugiat ducimus suscipit saepe id quasi assumenda iusto. Quaerat inventore natus, quod hic quia porro nisi perspiciatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia officiis excepturi suscipit impedit voluptate. Voluptatem, impedit, nam recusandae dignissimos mollitia sit consequatur eos laudantium id voluptate, voluptas quam? Delectus, repellat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum distinctio amet minus, sunt ipsa officia laborum nihil natus tempora. Laboriosam, quod dignissimos nisi omnis repellendus minima odio recusandae natus excepturi?</p>
+        <!--2° forma de deixar a img responsiva: envelopar a tag img com a tag picture, depois colocar a tag source media, dentro colocar max-width e o valor que queremos que a imagem quebre(mude de tamanho), dentro de srcset colocar o caminho da pasta da imagem CTRL E ESPAÇO NÃO FUNCIONA TEMOS QUE ESCREVER O CAMINHO.-->
+        <picture>
+            <source media="(max-width:600px)" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="">
+        </picture>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, animi aspernatur eligendi deleniti quae obcaecati, sint blanditiis, molestiae aperiam ab vel ea! Quasi est atque aperiam veritatis nam quam eligendi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio voluptatem ab quaerat vero cupiditate minima dolore libero doloremque ipsum voluptatibus eaque, molestias reiciendis, tempore tenetur illo ad fugit est excepturi!</p>
+    </main>
+</body>
+</html>
